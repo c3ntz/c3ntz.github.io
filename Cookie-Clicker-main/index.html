@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Spatial CLicker</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <section class="planetContainer">
+                <h1>Spatial Clicker</h1>
+                <section class="planetContainerText">
+                    <section class="constructsCount">
+                        <p id="score">0</p>
+                        <p>constructs</p>
+                    </section>
+                    <section class="constructsCountSecond">
+                        <p id="production">0</p>
+                        <p>per second</p>
+                    </section>
+                </section>
+                <canvas onclick="planetClick()">
+                    Your browser does not support the HTML canvas tag :'(
+                    <img id="planet" src="./assets/planet.png"></img>
+                </canvas>
+                <a href="team.html" class="contributor">Contributors</a>
+            </section>
+            <section class="buttonContainer">
+                <article class="hubbleContainer">
+                    <h2>Hubble</h2>
+                    <p id="hubbleCount">0</p>
+                    <button id="buyHubble">
+                        <span id="hubblePrice">20</span>
+                    </button>
+                </article>
+                <article class="astonautContainer">
+                    <h2 id="displayAstronaut" class="hidden">Astronaut</h2>
+                    <p id="astronautCount" class="hidden">0</p>
+                    <button id="buyAstronaut" disabled>
+                        <span id="astronautPrice">100</span>
+                    </button>
+                </article>
+                <article class="spaceCraftContainer">
+                    <h2 id="displaySpaceCraft" class="hidden">Space Craft</h2>
+                    <p id="spaceCraftCount" class="hidden" disabled>0</p>
+                    <button id="buySpaceCraft" disabled>
+                        <span id="spaceCraftPrice">1000</span>
+                    </button>
+                </article>
+                <article class="spaceShuttleContainer">
+                    <h2 id="displaySpaceShuttle" class="hidden">Space Shuttle</h2>
+                    <p id="spaceShuttleCount" class="hidden" disabled>0</p>
+                    <button id="buySpaceShuttle" disabled>
+                        <span id="spaceShuttlePrice">10000</span>
+                    </button>
+                </article>
+                <article class="NASAContainer">
+                    <h2 id="displayNASA" class="hidden">NASA</h2>
+                    <p id="NASACount" class="hidden" disabled>0</p>
+                    <button id="buyNASA" disabled>
+                        <span id="NASAPrice">45000</span>
+                    </button>
+                </article>
+                <article class="TonyStarkContainer">
+                    <h2 id="displayTonyStark" class="hidden">Tony Stark</h2>
+                    <p id="TonyStarkCount" class="hidden">0</p>
+                    <button id="buyTonyStark" disabled>
+                        <span id="tonyStarkPrice">100000</span>
+                    </button>
+                </article>
+            </section>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/canvas.js"></script>
+</body>
+</html>

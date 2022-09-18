@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&display=swap");
+* {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  * {
+    font-size: calc(14px + 13 * ((100vw - 320px) / 1030));
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  * {
+    font-size: 27px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka One', cursive;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 26px;
+}
+
+@media screen and (min-width: 320px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(26px + 13 * ((100vw - 320px) / 1030));
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 39px;
+  }
+}
+
+::-moz-selection {
+  color: #e4e4e4;
+  background-color: #363030;
+}
+
+::selection {
+  color: #e4e4e4;
+  background-color: #363030;
+}
+
+main h1 {
+  margin-top: -10vh;
+  padding: 7vh;
+  letter-spacing: .3rem;
+  word-spacing: .5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #F2F2F2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .container {
+  background-image: url(../spaceBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .planetContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8vh;
+  width: 45%;
+  height: 82vh;
+}
+
+main .container .planetContainer .planetContainerText {
+  width: 100%;
+  color: #F2F2F2 !important;
+  margin: -3vh 0 7vh 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+main .container .planetContainer .planetContainerText .constructsCount, main .container .planetContainer .planetContainerText .constructsCountSecond {
+  padding-right: 5.5vw;
+  margin: 0 auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container .planetContainer .planetContainerText .constructsCount p:first-child, main .container .planetContainer .planetContainerText .constructsCountSecond p:first-child {
+  margin: 0 auto;
+}
+
+main .container .planetContainer .planetContainerText .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container .planetContainer canvas {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+
+main .container .planetContainer .contributor {
+  margin-top: 8vh;
+  padding: 5px 20px 6px 20px;
+  border-radius: 7px;
+  color: #e4e4e4;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+main .container .planetContainer .contributor {
+  font-size: 9px;
+}
+
+@media screen and (min-width: 320px) {
+  main .container .planetContainer .contributor {
+    font-size: calc(9px + 13 * ((100vw - 320px) / 1030));
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  main .container .planetContainer .contributor {
+    font-size: 22px;
+  }
+}
+
+main .container .planetContainer .contributor:hover {
+  background-color: #e4e4e4;
+  color: #1d1a1a;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+main .container .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  height: 100vh;
+}
+
+main .container .buttonContainer article {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 16,666%;
+          flex: 1 16,666%;
+  height: 100%;
+  width: 99.85%;
+}
+
+main .container .buttonContainer article h2 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #F2F2F2;
+  -webkit-text-stroke: 1.2px #4C4343;
+  font-family: 'Lato', sans-serif;
+}
+
+main .container .buttonContainer article p {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10%;
+  height: 10vh;
+  text-align: center;
+  line-height: 10vh;
+  background-color: #00000080;
+  color: #F2F2F2;
+  border-radius: 7px;
+  font-family: 'Fredoka One', cursive;
+}
+
+main .container .buttonContainer article p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  main .container .buttonContainer article p {
+    font-size: calc(18px + 13 * ((100vw - 320px) / 1030));
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  main .container .buttonContainer article p {
+    font-size: 31px;
+  }
+}
+
+main .container .buttonContainer article button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16%;
+  height: 7vh;
+  line-height: 3vh;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0000008f;
+  color: #F2F2F2;
+  border: none;
+  border-radius: 7px 0 0 0;
+  -webkit-box-shadow: -1px -1px 250px white;
+          box-shadow: -1px -1px 250px white;
+  font-family: 'Fredoka One', cursive;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .container .buttonContainer article button {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  main .container .buttonContainer article button {
+    font-size: calc(18px + 13 * ((100vw - 320px) / 1030));
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  main .container .buttonContainer article button {
+    font-size: 31px;
+  }
+}
+
+main .container .buttonContainer article button:hover {
+  background-color: #cccccc;
+  color: #1d1a1a;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .container .buttonContainer article button:disabled {
+  background-color: #0000008f;
+  color: #ffffff27;
+}
+
+main .container .buttonContainer article:nth-child(1) {
+  border: 1px solid #1d1a1a;
+}
+
+main .container .buttonContainer article:nth-child(2) {
+  border: 1px solid #1d1a1a;
+}
+
+main .container .buttonContainer article:nth-child(3) {
+  border: 1px solid #1d1a1a;
+}
+
+main .container .buttonContainer article:nth-child(4) {
+  border: 1px solid #363030;
+}
+
+main .container .buttonContainer article:nth-child(5) {
+  border: 1px solid #4C4343;
+}
+
+main .container .buttonContainer article:nth-child(6) {
+  border: 1px solid #4C4343;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hubbleContainer {
+  background-image: url(../hobble.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 65%;
+}
+
+.astonautContainer {
+  background-image: url(../astronaut.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+}
+
+.spaceCraftContainer {
+  background-image: url(../space_comp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 45%;
+}
+
+.spaceShuttleContainer {
+  background-image: url(../spaceship.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 47%;
+}
+
+.NASAContainer {
+  background-image: url(../nasa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 43%;
+}
+
+.TonyStarkContainer {
+  background-image: url(../iron.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 7%;
+}
+
+@media (max-width: 1350px) {
+  article p {
+    width: 10% !important;
+    height: 8vh !important;
+    line-height: 8vh !important;
+  }
+}
+
+@media (max-width: 950px) {
+  article p {
+    width: 10% !important;
+    height: 6vh !important;
+    line-height: 6vh !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .planetContainer {
+    width: 100% !important;
+  }
+  .planetContainer .planetContainerText .constructsCount, .planetContainer .planetContainerText .constructsCountSecond {
+    padding-right: 15vw !important;
+  }
+  .planetContainer canvas {
+    width: 30% !important;
+  }
+  .planetContainer .contributor {
+    margin-top: 2vh !important;
+    padding: 6px 20px !important;
+  }
+  .buttonContainer {
+    margin-top: -20vh;
+    width: 100% !important;
+  }
+  .buttonContainer article p {
+    width: 10% !important;
+    height: 8vh !important;
+    line-height: 8vh !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .buttonContainer {
+    margin-top: -25vh !important;
+  }
+}
+
+@media (max-width: 1350px) {
+  article p {
+    width: 10% !important;
+    height: 6vh !important;
+    line-height: 6vh !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .planetContainer canvas {
+    width: 40% !important;
+  }
+  .buttonContainer {
+    margin-top: -30vh !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .contributor {
+    font-size: 1.5rem !important;
+  }
+  .buttonContainer {
+    margin-top: -35vh !important;
+  }
+  .buttonContainer article p {
+    width: 20% !important;
+    height: 7vh !important;
+    line-height: 7vh !important;
+  }
+  .buttonContainer article h2 {
+    left: 50% !important;
+    font-size: 2.5rem !important;
+    -webkit-transform: translate(-50%, -90%) !important;
+            transform: translate(-50%, -90%) !important;
+  }
+  .buttonContainer article button {
+    width: 35% !important;
+  }
+}
+
+.team .head {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.team .title-underline {
+  padding: 20px 0;
+  color: #ffbfac;
+  height: 21px;
+}
+
+.team .title-underline span {
+  width: 105px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.team .title-underline span:before, .team .title-underline span:after {
+  width: 4px;
+  height: 2px;
+  background: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -9px;
+}
+
+.team .title-underline span:after {
+  left: auto;
+  right: -9px;
+}
+
+.team svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.team .member {
+  margin-top: 7vh;
+}
+
+.team .member ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .member ul li {
+  margin: 4vh 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .member ul li img {
+  width: auto;
+  height: 25vh;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.team .member ul li h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.team .member ul li a {
+  color: #00000070;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.team .member ul li a:hover {
+  color: #d16848;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.team .member ul li div {
+  margin-top: 1.2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .member ul li div svg {
+  max-width: 32px;
+  padding: 5px 10px;
+}
+
+.team .member ul li div a {
+  color: #1d1a1a;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.team .member ul li div a:hover {
+  border: 1px solid #d16848;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+@media (max-width: 1380px) {
+  .member {
+    margin-top: 7vh;
+  }
+  .member ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .member ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
